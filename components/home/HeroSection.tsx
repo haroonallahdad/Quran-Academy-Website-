@@ -43,7 +43,7 @@ export default function HeroSection() {
       <div className="absolute top-32 left-6 w-72 h-72 rounded-full bg-[#D4AF37]/10 blur-3xl animate-float" />
       <div className="absolute bottom-16 right-4 w-96 h-96 rounded-full bg-[#0E7A5F]/15 blur-3xl animate-float" style={{ animationDelay: "3s" }} />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 lg:pb-20">
         <div className="grid lg:grid-cols-5 gap-10 lg:gap-14 items-start">
 
           {/* Left: Content (3 cols) */}
@@ -66,18 +66,18 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.12] mb-5">
+              <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.25] lg:leading-[1.12] mb-6">
                 Learn the Quran{" "}
                 <span className="relative inline-block">
                   <span className="text-[#D4AF37]">Beautifully</span>
-                  <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
+                  <svg className="absolute -bottom-1 lg:-bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
                     <path d="M2 9C60 3 120 1 160 3C200 5 240 8 298 6" stroke="#D4AF37" strokeWidth="2.5" strokeLinecap="round" opacity="0.6"/>
                   </svg>
                 </span>
                 <br />
                 <span className="text-white/90">from Anywhere</span>
               </h1>
-              <p className="text-white/75 text-lg leading-relaxed max-w-lg">
+              <p className="text-white/75 text-base sm:text-lg leading-relaxed max-w-lg mb-2">
                 One-on-one live classes with certified Ijazah teachers. Flexible scheduling for all ages and levels. 
                 Start with a <strong className="text-[#D4AF37]">free trial class</strong> — no commitment required.
               </p>
@@ -88,12 +88,12 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="flex flex-wrap gap-3"
+              className="flex flex-wrap gap-2 sm:gap-3"
             >
               {trustPoints.map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-2 bg-white/8 backdrop-blur-sm rounded-full px-3.5 py-2 border border-white/10">
-                  <Icon className="w-3.5 h-3.5 text-[#D4AF37]" />
-                  <span className="text-white/80 text-xs font-medium">{label}</span>
+                <div key={label} className="flex items-center gap-1.5 sm:gap-2 bg-white/8 backdrop-blur-sm rounded-full px-3 sm:px-3.5 py-1.5 sm:py-2 border border-white/10 w-fit">
+                  <Icon className="w-3.5 h-3.5 text-[#D4AF37] flex-shrink-0" />
+                  <span className="text-white/80 text-[11px] sm:text-xs font-medium">{label}</span>
                 </div>
               ))}
             </motion.div>
