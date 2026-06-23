@@ -46,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
-      <body className="font-body antialiased bg-beige">
+      <body className="font-body antialiased bg-beige overflow-x-hidden">
         <Toaster
           position="top-right"
           toastOptions={{

@@ -49,7 +49,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="absolute -bottom-5 -right-4 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 flex items-center gap-3"
+              className="absolute -bottom-5 right-2 sm:-right-4 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 flex items-center gap-3"
             >
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0E7A5F] to-[#D4AF37] flex items-center justify-center text-white text-lg">
                 🌍
