@@ -51,7 +51,7 @@ export default function EnrollForm({ compact = false, defaultCourse }: EnrollFor
           <input
             id="enroll-name"
             type="text"
-            placeholder="Your full name"
+            placeholder="e.g. Fatima Al-Hassan"
             className={`${inputClass} pl-10 ${errors.fullName ? "border-red-300 bg-red-50/30" : "border-gray-200"}`}
             {...register("fullName")}
           />

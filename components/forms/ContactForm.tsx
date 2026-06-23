@@ -49,7 +49,7 @@ export default function ContactForm() {
             <input
               id="contact-name"
               type="text"
-              placeholder="John Smith"
+              placeholder="Abdullah Al-Farooq"
               className={`${inputClass} pl-10 ${errors.name ? "border-red-300" : "border-gray-200"}`}
               {...register("name")}
             />
